@@ -13,7 +13,7 @@ export default function Login() {
     const authentication=()=>{
         if(user.usename==="admin" && user.password==="password123"){
             setUser({usename:"", password:"", error:""});
-            navigate("/dashboard");
+            navigate('/dashboard');
         }else{
             setUser({'error':"Invalid Username or Password"});
         }
